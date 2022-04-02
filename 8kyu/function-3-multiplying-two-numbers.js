@@ -1,6 +1,6 @@
 // FUNCTION 3-MULTIPLYING TWO NUMBERS
 
-// Implement a function which multiplies two numbers.
+// Implement a function which multiplies two numbers
 
 // my solution
 function multiply(a, b) {
