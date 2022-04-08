@@ -31,4 +31,7 @@ function monkeyCount(n) {
   }
   return monkeys;
  }
+
+ // one liner
+ const monkeyCount = n => [...Array(n)].map((_, i) => i+1);
   
