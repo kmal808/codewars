@@ -9,3 +9,23 @@
 
 //* ball1.ballType     //=> "regular"
 //* ball2.ballType     //=> "super"
+
+
+
+//? MY SOLUTION
+
+class Ball {
+  constructor(ballType = "regular") {
+    this.ballType = ballType;
+  }
+}
+
+//? TOP SOLUTION
+
+var Ball = function(ballType) {
+  this.ballType = ballType || 'regular';
+};
+
+//? ONE LINER
+
+function Ball(ﾠ='regular'){this.ballType=ﾠ}
