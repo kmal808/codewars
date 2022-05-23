@@ -29,3 +29,8 @@ function xor(a, b) {
 
 const xor=(a, b)=>a!=b;
 
+//? ADDITIONAL SOLUTION THAT IS EASIER TO READ THAN THE TOP AND ONE LINER
+
+function xor(a, b) {
+  return (a || b) && !(a && b);
+}
