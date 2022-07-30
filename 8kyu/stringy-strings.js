@@ -22,7 +22,7 @@ function stringy(size) {
 	return makeStr
 }
 
-//? TOP SOLUTIONS
+//? TOP SOLUTION
 
 function stringy(size) {
 	string = '1'

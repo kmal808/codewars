@@ -4,23 +4,20 @@
 
 // P.S. Each array includes only integer numbers. Output is a number too.
 
-// my solution 
+// my solution
 function arrayPlusArray(arr1, arr2) {
-  return arr1.reduce((a,b)=>a+b,0)+arr2.reduce((a,b)=>a+b,0); //something went wrong
+	return arr1.reduce((a, b) => a + b, 0) + arr2.reduce((a, b) => a + b, 0) //something went wrong
 }
 
-// top solution
+// top solutions
 function arrayPlusArray(arr1, arr2) {
-  return arr1.concat(arr2).reduce((acc, cur) => acc + cur);
+	return arr1.concat(arr2).reduce((acc, cur) => acc + cur)
 }
 
 // using for loops
 function arrayPlusArray(arr1, arr2) {
-  var suma=0;
-  for(var i=0;i<arr1.length;i++)
-    suma+=arr1[i];
-  for(var i=0;i<arr2.length;i++)
-    suma+=arr2[i];
-  return suma;
+	var suma = 0
+	for (var i = 0; i < arr1.length; i++) suma += arr1[i]
+	for (var i = 0; i < arr2.length; i++) suma += arr2[i]
+	return suma
 }
-
