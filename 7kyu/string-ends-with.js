@@ -36,3 +36,24 @@ function solution(str, ending) {
 			.search(ending.split('').reverse().join('')) === 0
 	)
 }
+
+//* OR....
+function solution(str, ending) {
+	let strArray = str.split('')
+	let endArray = ending.split('')
+	let wasteArrayLength = strArray.length - endArray.length
+	let newArray = []
+
+	for (let i = wasteArrayLength; i < strArray.length; i++) {
+		newArray.push(strArray[i])
+	}
+
+	let newEnding = endArray.join()
+	let newString = newArray.join()
+
+	if (newString == newEnding) {
+		return true
+	} else {
+		return false
+	}
+}
